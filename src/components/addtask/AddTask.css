@@ -1,0 +1,16 @@
+.addtask-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 260px;
+  margin: auto;
+}
+.addtask-container-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col-md-6 {
+    width: 100%;
+}
