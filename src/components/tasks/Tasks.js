@@ -4,14 +4,36 @@ import { GoX } from "react-icons/go";
 function Tasks({ form }) {
 
   const clickLi = (e) => {
-    if(e.target.style.textDecoration === "none"){
-      e.target.style.textDecoration = "line-through"
-      e.target.style.transition = "all 1s"
-      e.target.style.transform = "scale(0.95)"
+    console.log(e.target.tagName);
+    if(e.target.tagName === "H5" || e.target.tagName === "P"){
+      if(e.target.parentElement.parentElement.style.textDecoration === "none"){
+        e.target.parentElement.parentElement.style.textDecoration = "line-through"
+        e.target.parentElement.parentElement.style.transition = "all 1s"
+        e.target.parentElement.parentElement.style.transform = "scale(0.95)"
+      }else {
+        e.target.parentElement.parentElement.style.textDecoration = "none";
+        e.target.parentElement.parentElement.style.transform = "scale(1)"
+      }
+    }else if(e.target.tagName === "DIV"){
+      if(e.target.parentElement.style.textDecoration === "none"){
+        e.target.parentElement.style.textDecoration = "line-through"
+        e.target.parentElement.style.transition = "all 1s"
+        e.target.parentElement.style.transform = "scale(0.95)"
+      }else {
+        e.target.parentElement.style.textDecoration = "none";
+        e.target.parentElement.style.transform = "scale(1)"
+      }
     }else {
-      e.target.style.textDecoration = "none";
-      e.target.style.transform = "scale(1)"
+      if(e.target.style.textDecoration === "none"){
+        e.target.style.textDecoration = "line-through"
+        e.target.style.transition = "all 1s"
+        e.target.style.transform = "scale(0.95)"
+      }else {
+        e.target.style.textDecoration = "none";
+        e.target.style.transform = "scale(1)"
+      }
     }
+
     
   }
 

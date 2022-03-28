@@ -1,5 +1,11 @@
 body {
-  background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+  background-color:rebeccapurple;
+  background-image: url(./pngwing.com\ \(1\).png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  
 }
 
 code {
