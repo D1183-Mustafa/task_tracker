@@ -1,0 +1,28 @@
+.ul {
+    margin-bottom: 10px;
+}
+
+.li {
+    background-color: bisque;
+    border-radius: 9px;
+    padding-left: 10px;
+    padding-top: 10px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+.li:hover {
+    background-color: rgb(167, 132, 90);
+}
+.icon_div {
+    padding: 10px;
+}
+
+.icon {
+    transition: all 0.4s;
+}
+.icon:hover {
+    transform: scale(1.50);
+}

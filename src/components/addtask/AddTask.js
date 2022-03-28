@@ -1,7 +1,8 @@
 import { Form, Row, Col, FormGroup, Label, Input, Button } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./AddTask.css";
-function AddTask() {
+function AddTask({handleForm,handleFormArray,form}) {
+  // console.log(handleForm);
   return (
     <div className="addtask-container">
       <Form className="addtask-container-form">
@@ -13,6 +14,8 @@ function AddTask() {
                 id="exampleTask"
                 name="task"
                 placeholder="AddTask"
+                onChange={handleForm}
+                value={form.task}
               />
             </FormGroup>
           </Col>
@@ -23,11 +26,13 @@ function AddTask() {
                 id="exampleDate"
                 name="date"
                 placeholder="add Day & time"
+                onChange={handleForm}
+                value={form.date}
               />
             </FormGroup>
           </Col>
         </Row>
-        <Button>Sign in</Button>
+        <Button onClick={handleFormArray}>Add</Button>
       </Form>
     </div>
   );

@@ -1,10 +1,5 @@
 body {
-  background: rgb(41, 127, 185);
-  background: linear-gradient(
-    94deg,
-    rgba(41, 127, 185, 1) 24%,
-    rgba(32, 6, 206, 1) 100%
-  );
+  background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
 }
 
 code {
